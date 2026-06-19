@@ -25,7 +25,8 @@ const Connexion = () => {
         };
        
         try {
-            const response = await fetch("http://localhost:3002/api/auth/connexion", {
+            const response = await fetch("https://backend-node-lsyp.onrender.com/api/auth/connexion", {
+                //"http://localhost:3002/api/auth/connexion"
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
