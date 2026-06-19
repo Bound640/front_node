@@ -1,5 +1,6 @@
-import React, { useState ,  } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React, { useState ,  } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+const URL_BACK = import.meta.env.VITE_URL_BACK;
 
 
 
@@ -31,8 +32,8 @@ const Inscription = () => {
         };
 
         try {
-            const response = await fetch("https://backend-node-lsyp.onrender.com/api/auth/inscription", {
-                //"http://localhost:3002/api/auth/inscription"
+            const response = await fetch(`${URL_BACK}/api/auth/inscription`, {
+              
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
